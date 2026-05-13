@@ -1,0 +1,12 @@
+.front{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 200px 250px ;
+    gap:6px
+}
+
+.front-image img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}

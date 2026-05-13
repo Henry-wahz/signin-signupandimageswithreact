@@ -1,0 +1,124 @@
+.auth-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    
+}
+.auth-page::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 60px,
+        rgba(6, 233,47, 0.5)60px,
+        rgba(2, 36, 254, 0.81) 61px
+    );
+}
+
+
+
+.auth-container{
+    position: relative;
+   border: 1px solid rgba(29, 60, 35, 0.8);
+   box-shadow: 5px 2px solid rgb(91, 91, 91);
+    padding: 45px 35px;
+    background-color: rgba(0, 18, 6, 0.8);
+    max-width: 300px;
+   
+}
+.auth-container::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(6, 233, 47, 0.8), transparent);
+
+}
+.auth-header{
+  
+    
+    text-align: center;
+
+
+}
+.moon{
+    margin-bottom: 20px;
+}
+
+
+.auth-button{
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+    display: flex;
+}
+
+.auth-button button{
+    flex: 1; /*1 1 0*/
+    background:none;
+    border: none;
+    padding: 8px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0.07em;
+    position: relative;
+
+}
+
+.input-box{
+    margin-top: 20px;
+}
+
+.input-box label{
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    
+
+}
+.input-box input{
+    padding: 6px;
+    border-radius: 5px;
+    background: none;
+    width: 100% ;
+    color: white;
+}
+
+.sign-button{
+    margin-top: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   padding: 5px;
+   background: none;
+   border: none;
+   color: white;
+   background-color:rgba(37, 203, 67, 0.8) ;
+
+   
+}
+
+.auth-button .active{
+   color: rgb(9, 239, 9);
+   
+}
+
+.auth-button .active::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    left:0;
+    right: 0;
+   
+    bottom: -1px;
+    background-color: rgb(81, 198, 35);
+}
