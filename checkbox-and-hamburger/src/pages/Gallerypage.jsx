@@ -2,6 +2,7 @@ import "./gallery.css"
 import FlipCard from "./Flipcard"
 import { IMAGES } from "./Gallery"
 
+
 export default function Gallery(){
     return(
         <div className="gallery">
